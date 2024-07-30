@@ -79,3 +79,28 @@ console.log(power(2, 13));
 console.log(power(4, 4));
 console.log(power(5, 1));
 ```
+
+#### Пример 8:
+```javascript
+let a = 1;
+let b = 2;
+
+function funcInGlobal() {
+    let a = 3;
+    console.log('a: ' + a); // 3
+    console.log('b: ' + b); // 2
+    b = 4;
+
+    function funcInLocal(c) {
+        let b = 5;
+        console.log('a: ' + a); // 3
+        console.log('b: ' + b); // 5
+        console.log('c: ' + c); // 6
+    }
+    funcInLocal(6);
+}
+funcInGlobal();
+
+console.log('a: ' + a); // 1
+console.log('b: ' + b); // 4
+```
