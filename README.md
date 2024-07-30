@@ -67,3 +67,15 @@ function abs(x) {
 console.log(abs(-42));
 console.log(abs(20));
 ```
+
+#### Пример 7:
+```javascript
+function power(base, exp) {
+    let result = 1;
+    for(let i=0; i<exp; i++) { result*=base; }
+    return result;
+}
+console.log(power(2, 13));
+console.log(power(4, 4));
+console.log(power(5, 1));
+```
