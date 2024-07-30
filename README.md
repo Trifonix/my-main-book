@@ -36,8 +36,25 @@ hello();
 #### Пример 3:
 ```
 function hello(name) {
-    let name = name || 'somebody';
+    name = name || 'somebody';
     console.log('Hello ' + name + '!');
 }
 hello('World');
+```
+
+#### Пример 4:
+```
+function hello(name='somebody') {
+    console.log('Hello ' + name + '!');
+}
+hello('World');
+```
+
+#### Пример 5:
+```
+function calc(number1, number2) {
+    return number1 + number2;
+}
+let result = calc(5, 6);
+console.log(result);
 ```
