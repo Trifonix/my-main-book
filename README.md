@@ -104,3 +104,23 @@ funcInGlobal();
 console.log('a: ' + a); // 1
 console.log('b: ' + b); // 4
 ```
+
+#### Пример 9:
+```javascript
+const letter = 'l';
+function printLetter(isTrue) {
+    // var letter;
+    if(isTrue) {
+        console.log(letter);
+    } else {
+        var letter = 'L'; // letter = 'L';
+        console.log(letter);
+    }
+}
+printLetter(1);
+```
+
+#### Пример 10:
+```javascript
+
+```
