@@ -17,7 +17,7 @@ JavaScript - это мультипарадигменный язык програ
 Функции - это подпрограммы, которые в JS нужны для многократного использованиия одинакового кода.
 
 #### Пример 1:
-```
+```javascript
 function hello() {
     console.log('Hello World!');
 }
@@ -25,7 +25,7 @@ hello();
 ```
 
 #### Пример 2:
-```
+```javascript
 function hello() {
     let name = 'World';
     console.log('Hello ' + name + '!');
@@ -34,7 +34,7 @@ hello();
 ```
 
 #### Пример 3:
-```
+```javascript
 function hello(name) {
     name = name || 'somebody';
     console.log('Hello ' + name + '!');
@@ -43,7 +43,7 @@ hello('World');
 ```
 
 #### Пример 4:
-```
+```javascript
 function hello(name='somebody') {
     console.log('Hello ' + name + '!');
 }
@@ -51,10 +51,19 @@ hello('World');
 ```
 
 #### Пример 5:
-```
+```javascript
 function calc(number1, number2) {
     return number1 + number2;
 }
 let result = calc(5, 6);
 console.log(result);
+```
+
+#### Пример 6:
+```javascript
+function abs(x) {
+    return (x<0) ? -x : x;
+}
+console.log(abs(-42));
+console.log(abs(20));
 ```
