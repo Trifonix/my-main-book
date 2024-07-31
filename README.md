@@ -122,5 +122,15 @@ printLetter(1);
 
 #### Пример 10:
 ```javascript
+function print(data){console.log(data)};
+print("hello world!"); // hello world!
+print(print); // [Function: print]
+print(typeof print); // function
+const myFunction = print;
+myFunction(true); // true
+```
+
+#### Пример 11:
+```javascript
 
 ```
