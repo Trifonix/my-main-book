@@ -132,5 +132,32 @@ myFunction(true); // true
 
 #### Пример 11:
 ```javascript
+// var x;
+x(); // x is not a function
+var x = function(){}; // x = function(){};
+```
+
+#### Пример 12. Функции высшего порядка:
+```javascript
+function func() {
+    return function (x) {console.log(x)};
+}
+let x = func();
+x("Text"); // Text
+```
+
+#### Пример 13. Замыкание (способность функции сохранять ссылку на переменную из вышестоящего контекста):
+```javascript
+function printMessage(greetingWord) {
+    return function(name) {
+        return greetingWord + ' ' + name;
+    }
+}
+let ru = printMessage('Привет');
+console.log(ru('Человек')); // Привет Человек
+```
+
+#### Пример 14:
+```javascript
 
 ```
