@@ -159,5 +159,15 @@ console.log(ru('Человек')); // Привет Человек
 
 #### Пример 14:
 ```javascript
+function myFunc(start, end, action) {
+    for(let i=start; i<=end; ++i) {
+        action(i);
+    }
+}
+myFunc(2, 8, console.log);
+```
+
+#### Пример 15:
+```javascript
 
 ```
